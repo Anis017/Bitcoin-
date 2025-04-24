@@ -26,6 +26,7 @@ class Block:
 
     def calculate_hash(self):
         # Calculate the SHA-256 hash of the block
+        #The miner solves a puzzle with hashing 
         # Concatenate all block attributes as strings and hash them
         sha = hashlib.sha256()
         sha.update(str(self.index).encode('utf-8') +
